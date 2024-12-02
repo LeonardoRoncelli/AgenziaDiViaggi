@@ -20,4 +20,15 @@ public class Agenzia {
     public double getPrezzoBase(){
         return prezzoBase;
     }
+    public Agenzia(String destinazione,int numGiorni,double prezzoBase){
+        this.destinazione=destinazione;
+        this.numGiorni=numGiorni;
+        this.prezzoBase=prezzoBase;
+    }
+    public Agenzia(){
+        destinazione="";
+        numGiorni=0;
+        prezzoBase=0;
+    }
+
 }
