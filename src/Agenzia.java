@@ -37,7 +37,7 @@ public class Agenzia {
     }
     public boolean equals(Object o){
         if(o instanceof Agenzia){
-            Agenzia f=(Agenzia)o;
+            Agenzia a=(Agenzia)o;
             return this.destinazione.equalsIgnoreCase(destinazione)&&this.numGiorni==(numGiorni)&&this.prezzoBase==prezzoBase;
         }else{
             return false;
