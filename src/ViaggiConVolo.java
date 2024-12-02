@@ -1,17 +1,17 @@
 public class ViaggiConVolo extends Agenzia{
-    private boolean andataRitorno;
+    private boolean isAndataRitorno;
     public ViaggiConVolo(String destinazione,int numGiorni,double prezzoBase,boolean andataRitorno){
         super(destinazione,numGiorni,prezzoBase);
-        this.andataRitorno=andataRitorno;
+        this.isAndataRitorno =andataRitorno;
     }
     public void setAndataRitorno(boolean andataRitorno){
-        this.andataRitorno=andataRitorno;
+        this.isAndataRitorno =andataRitorno;
     }
     public boolean getAndataRitorno(){
-        return andataRitorno;
+        return isAndataRitorno;
     }
     public String getTipologiaVolo(){
-        if (andataRitorno){
+        if (isAndataRitorno){
             return "Volo andata e ritorno";
         }else {
             return "Volo sola andata";
