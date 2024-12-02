@@ -30,5 +30,9 @@ public class Agenzia {
         numGiorni=0;
         prezzoBase=0;
     }
-
+    public String toString(){
+        return ("Destinazione del viaggio: "+destinazione+"\n"+
+                "Durata in giorni del viaggio: "+numGiorni+"\n"+
+                "Prezzo base del viaggio: "+prezzoBase);
+    }
 }
