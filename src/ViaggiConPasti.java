@@ -17,4 +17,7 @@ public class ViaggiConPasti extends Agenzia {
             return "Mezza pensione";
         }
     }
+    public String toString(){
+        return ("Tipologia dei pasti: "+getTipologiaPasti());
+    }
 }

@@ -17,4 +17,7 @@ public class ViaggiConVolo extends Agenzia{
             return "Volo sola andata";
         }
     }
+    public String toString(){
+        return ("Tipologia del volo: "+getTipologiaVolo());
+    }
 }
