@@ -35,4 +35,12 @@ public class Agenzia {
                 "Durata in giorni del viaggio: "+numGiorni+"\n"+
                 "Prezzo base del viaggio: "+prezzoBase);
     }
+    public boolean equals(Object o){
+        if(o instanceof Agenzia){
+            Agenzia f=(Agenzia)o;
+            return this.destinazione.equalsIgnoreCase(destinazione)&&this.numGiorni==(numGiorni)&&this.prezzoBase==prezzoBase;
+        }else{
+            return false;
+        }
+    }
 }
