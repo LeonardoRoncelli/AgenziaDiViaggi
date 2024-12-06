@@ -2,6 +2,7 @@ public class Agenzia {
     private String destinazione;
     private int numGiorni;
     private double prezzoBase;
+    private Agenzia[]viaggi=new Agenzia[100];
     public void setDestinazione(String destinazione){
         this.destinazione=destinazione;
     }
@@ -24,6 +25,12 @@ public class Agenzia {
         this.destinazione=destinazione;
         this.numGiorni=numGiorni;
         this.prezzoBase=prezzoBase;
+    }
+    public void setViaggi(Agenzia[]viaggi){
+        this.viaggi=viaggi;
+    }
+    public Agenzia[] getViaggi(){
+        return viaggi;
     }
     public Agenzia(){
         destinazione="";
