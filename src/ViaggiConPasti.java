@@ -13,7 +13,7 @@ public class ViaggiConPasti extends Pacchetto {
     public String getTipologiaPasti(){
         if (isPensioneCompleta){
             return "Pensione completa";
-        }else {
+        }else{
             return "Mezza pensione";
         }
     }

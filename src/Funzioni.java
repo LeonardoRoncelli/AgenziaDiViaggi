@@ -1,5 +1,5 @@
 public class Funzioni {
-    public void inserimento(){
-
+    public double calcolaPrezzo(){
+        
     }
 }

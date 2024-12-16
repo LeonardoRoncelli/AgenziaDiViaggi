@@ -1,4 +1,4 @@
-public class Pacchetto {
+public class Agenzia {
     private String destinazione;
     private int numGiorni;
     private double prezzoBase;
@@ -20,12 +20,12 @@ public class Pacchetto {
     public double getPrezzoBase(){
         return prezzoBase;
     }
-    public Pacchetto(String destinazione,int numGiorni,double prezzoBase){
+    public Agenzia(String destinazione,int numGiorni,double prezzoBase){
         this.destinazione=destinazione;
         this.numGiorni=numGiorni;
         this.prezzoBase=prezzoBase;
     }
-    public Pacchetto(){
+    public Agenzia(){
         destinazione="";
         numGiorni=0;
         prezzoBase=0;
@@ -36,8 +36,8 @@ public class Pacchetto {
                 "Prezzo base del viaggio: "+prezzoBase);
     }
     public boolean equals(Object o){
-        if(o instanceof Pacchetto){
-            Pacchetto a=(Pacchetto) o;
+        if(o instanceof Agenzia){
+            Agenzia a=(Agenzia)o;
             return this.destinazione.equalsIgnoreCase(destinazione)&&this.numGiorni==(numGiorni)&&this.prezzoBase==prezzoBase;
         }else{
             return false;
