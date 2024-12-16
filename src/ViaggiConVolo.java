@@ -1,8 +1,12 @@
-public class ViaggiConVolo extends Agenzia{
+public class ViaggiConVolo extends Pacchetto{
     private boolean isAndataRitorno;
-    public ViaggiConVolo(String destinazione,int numGiorni,double prezzoBase,boolean andataRitorno){
+    public ViaggiConVolo(boolean isAndataRitorno,String destinazione,int numGiorni,double prezzoBase){
         super(destinazione,numGiorni,prezzoBase);
-        this.isAndataRitorno =andataRitorno;
+        this.isAndataRitorno =isAndataRitorno;
+    }
+
+    public ViaggiConVolo(boolean isAndataRitorno) {
+        isAndataRitorno=false;
     }
     public void setAndataRitorno(boolean andataRitorno){
         this.isAndataRitorno =andataRitorno;

@@ -1,7 +1,7 @@
-public class ViaggiConEscursioni extends Agenzia{
+public class ViaggiConEscursioni extends ViaggiConVolo{
     private int numEscursioni;
-    public ViaggiConEscursioni(String destinazione,int numGiorni,double prezzoBase,int numEscursioni){
-        super(destinazione,numGiorni,prezzoBase);
+    public ViaggiConEscursioni(boolean isAndataRitorno,int numEscursioni){
+        super(isAndataRitorno);
         this.numEscursioni =numEscursioni;
     }
     public void setNumEscursioni(int numEscursioni){
@@ -11,6 +11,6 @@ public class ViaggiConEscursioni extends Agenzia{
         return numEscursioni;
     }
     public String toString(){
-        return ("Numero delle escursini: "+getNumEscursioni());
+        return ("Numero delle escursioni: "+getNumEscursioni());
     }
 }

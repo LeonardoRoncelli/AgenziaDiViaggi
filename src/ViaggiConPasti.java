@@ -1,4 +1,4 @@
-public class ViaggiConPasti extends Agenzia {
+public class ViaggiConPasti extends Pacchetto {
     private boolean isPensioneCompleta;
     public ViaggiConPasti(String destinazione,int numGiorni,double prezzoBase,boolean isPensioneCompleta){
         super(destinazione,numGiorni,prezzoBase);
