@@ -1,8 +1,9 @@
+import java.util.Queue;
 import java.util.Scanner;
 public class TestAgenzia {
     public static void main(String[]args){
         Scanner input=new Scanner(System.in);
-        Funzioni funzione=new Funzioni();
+        AgenziaViaggi funzione=new AgenziaViaggi();
         final double costoBase=200;
         int scelta;
         do{
